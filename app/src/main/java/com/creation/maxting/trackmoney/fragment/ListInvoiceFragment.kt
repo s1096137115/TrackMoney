@@ -10,8 +10,6 @@ import android.view.ViewGroup
  */
 class ListInvoiceFragment : BaseFragment(){
 
-
-
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return super.onCreateView(inflater, container, savedInstanceState)
     }

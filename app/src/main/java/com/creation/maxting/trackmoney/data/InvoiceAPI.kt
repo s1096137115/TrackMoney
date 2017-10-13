@@ -11,4 +11,12 @@ interface InvoiceAPI {
     @FormUrlEncoded
     @POST("invapp/InvApp")
     fun QueryInvoiceHeader(@FieldMap fields: Map<String, String>): Single<ResponseInvoiceHeader>
+
+    @FormUrlEncoded
+    @POST("invapp/InvApp")
+    fun QueryInvoiceDetail(@FieldMap fields: Map<String, String>): Single<ResponseInvoiceDetail>
+
+    @FormUrlEncoded
+    @POST("Carrier/Aggregate")
+    fun QueryCarrierAggregate(@FieldMap fields: Map<String, String>): Single<ResponseCarrierAggregate>
 }

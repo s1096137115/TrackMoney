@@ -21,8 +21,8 @@ object RetrofitClient {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build()
 
-    fun getEInvoiceAPI(fields: Map<String, String>) : Single<ResponseInvoiceHeader> {
-        return retrofit.create(InvoiceAPI::class.java).QueryInvoiceHeader(fields)
+    fun getEInvoiceAPI() : InvoiceAPI {
+        return retrofit.create(InvoiceAPI::class.java)
     }
 
 }
